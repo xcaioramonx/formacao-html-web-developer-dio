@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo I - Primeiros Passos com HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Módulo I - Primeiros Passos com HTML</h1>
+    <hr>
+
+    <h2><a id="indice">Índice do conteúdo</a></h2>
+    <ul>
+        <li><a href="#historia">História dos Computadores</a></li>
+        <li><a href="#clients">O que são <strong>Clients </strong></a></li>
+        <li><a href="#servers">O que são <strong>Servers</strong></a></li>
+        <li><a href="#estrutura">Estrutura de um Documento HTML</a></li>
+        <li><a href="#listas">Diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+    <hr>
+
+    <h2 id="historia"><u>História dos Computadores</u></h2>
+    <p>A história dos computadores é marcada por uma fascinante evolução tecnológica que transformou completamente a sociedade moderna. Desde os primeiros dispositivos mecânicos até as poderosas máquinas digitais de hoje, os computadores passaram por diversas fases de desenvolvimento.</p> 
+    
+    <h3>Pré-história da Computação</h3>
+    <p>Antes da invenção do computador moderno, o ser humano já buscava formas de facilitar cálculos. Um dos primeiros instrumentos foi o ábaco, utilizado por civilizações antigas como a mesopotâmica e a chinesa. Durante o século XVII, matemáticos como <i>Blaise Pascal</i> e <i>Gottfried Wilhelm Leibniz</i> criaram calculadoras mecânicas capazes de realizar operações básicas.</p>
+
+    <h3>Primeiras máquinas e a Ideia do Computador Programável</h3>
+    <p>No século XIX, o matemático britânico Charles Babbage projetou a Máquina Analítica, considerada o primeiro conceito de computador programável. Embora nunca tenha sido construída em sua totalidade, a máquina de Babbage já previa componentes como a memória e a unidade de processamento. <i>Ada Lovelace</i>, que colaborou com <i>Babbage</i>, é considerada a primeira programadora da história por escrever algoritmos para essa máquina.</p>
+
+    <h3>A Era dos Computadores Eletromecânicos e Eletrônicos</h3>
+    <p>Durante a primeira metade do século XX, surgiram os primeiros computadores eletromecânicos e eletrônicos. Em 1941, o engenheiro alemão <i>Konrad Zuse</i> criou o Z3, considerado o primeiro computador totalmente programável e automático. Poucos anos depois, nos Estados Unidos, foi desenvolvido o ENIAC (1946), uma máquina enorme que ocupava uma sala inteira e usava milhares de válvulas para realizar cálculos militares.</p>
+
+    <h3>Gerações dos Computadores</h3>
+    <p>A evolução dos computadores é frequentemente dividida em gerações, cada uma marcada por avanços tecnológicos significativos:</p>
+    <ul>
+        <li><strong>Primeira Geração (1940-1956):</strong> <blockquote>Usava válvulas eletrônicas e ocupava grandes espaços. Programação era feita em linguagem de máquina.</blockquote></li>
+        <li><strong>Segunda Geração (1956-1963):</strong> <blockquote>Introduziu transistores, tornando os computadores menores e mais eficientes. Linguagens de programação de alto nível começaram a ser desenvolvidas.</blockquote></li>
+        <li><strong>Terceira Geração (1964-1971):</strong> <blockquote>Circuitos integrados, aumentando a capacidade de processamento e reduzindo o tamanho dos computadores. Sistemas operacionais começaram a ser mais comuns. </blockquote></li>
+        <li><strong>Quarta Geração (1971-presente):</strong> <blockquote>Microprocessadores, permitindo a criação de computadores pessoais. A computação tornou-se acessível ao público em geral.</blockquote></li>
+        <li><strong>Quinta Geração (futuro):</strong> <blockquote>Em inteligência artificial e computação quântica, com o objetivo de criar máquinas que possam aprender e raciocinar como humanos.</blockquote></li>
+    </ul>
+    <small><a href="#indice"> Voltar para o índice</a></small>
+    <hr>
+
+    <h2 id="clients"><u>O que são Clients</u></h2>
+    <p>Em termos de computação, um <strong>client</strong> é um dispositivo ou software que solicita serviços ou recursos de outro dispositivo ou software, conhecido como <strong>server</strong>. Os clients podem ser computadores, smartphones, tablets ou qualquer outro dispositivo conectado à rede.</p>
+    <p>Os clients geralmente executam aplicações que permitem aos usuários interagir com os serviços oferecidos pelos servers. Por exemplo, um navegador web é um client que solicita páginas da web de um server, enquanto um aplicativo de e-mail é um client que se conecta a um server de e-mail para enviar e receber mensagens.</p>
+    <small><a href="#indice"> Voltar para o índice</a></small>
+    <hr>
+
+    <h2 id="servers"><u>O que são Servers</u></h2>
+    <p>Um <strong>server</strong> é um dispositivo ou software que fornece serviços, recursos ou dados a outros dispositivos ou softwares, conhecidos como clients. Os servers são projetados para atender a múltiplas solicitações simultaneamente e podem ser especializados em diferentes funções, como hospedagem de sites, armazenamento de arquivos, gerenciamento de banco de dados, entre outros.</p>
+    <p>Os servers operam em uma rede, respondendo às solicitações dos clients e enviando de volta as informações solicitadas. Por exemplo, um server web hospeda sites e responde às requisições dos browsers (clients) para exibir páginas da web. Outro exemplo é um server de banco de dados, que armazena e gerencia dados para aplicações que precisam acessar essas informações.</p>
+    <small><a href="#indice"> Voltar para o índice</a></small>
+    <hr>
+
+    <h2 id="estrutura"><u>Estrutura de um Documento HTML</u></h2>
+
+<p>Um documento <abbr>HTML</abbr> (HyperText Markup Language) é estruturado de forma hierárquica, começando com a declaração do tipo de documento e seguindo com elementos que definem o conteúdo da página. A estrutura básica de um documento <abbr>HTML</abbr> é a seguinte:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Título da Página&lt;/h1&gt;
+    &lt;p&gt;Conteúdo da página.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>O elemento <code>&lt;!DOCTYPE html&gt;</code> indica que o documento é um HTML5. O elemento <code>&lt;html&gt;</code> envolve todo o conteúdo da página, enquanto o elemento <code>&lt;head&gt;</code> contém metadados, como o título da página e links para estilos ou scripts. O elemento <code>&lt;body&gt;</code> contém o conteúdo visível da página, como títulos, parágrafos e imagens.</p>
+<small><a href="#indice"> Voltar para o índice</a></small>
+<hr>
+
+
+<h2 id="listas"><u>Diferença entre listas ordenadas e não ordenadas</u></h2>
+<p>As listas em HTML podem ser ordenadas ou não ordenadas:</p>
+    <ul>
+        <li><strong>Listas Ordenadas:</strong> Usam o elemento <code>&lt;ol&gt;</code> e são numeradas automaticamente.</li>
+        <li><strong>Listas Não Ordenadas:</strong> Usam o elemento <code>&lt;ul&gt;</code> e são marcadas com marcadores (bullets).</li>
+    </ul>
+<small><a href="#indice"> Voltar para o índice</a></small>
+<hr>
+
+    <h2 id="referencias"><u>Referências</u></h2>
+    <p>Para mais informações sobre HTML e desenvolvimento web, consulte os seguintes recursos:</p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+        <li><a href="https://www.w3.org/TR/html52/" target="_blank">W3C - HTML Standard</a></li>
+        <li><a href="http://dio.me" target="_blank">DIO</a></li>
+    </ul>
+<small><a href="#indice"> Voltar para o índice</a></small>
+<hr>
+</head>
+    <footer>
+        <p>Desenvolvido por Caio Ramon Gomes Mesquita - Módulo I do Curso de HTML</p>
+    </footer>
+</body>
+</html>
